@@ -1,0 +1,1 @@
+An application for recording your learning path. This app using MongoDB - Express - React - Nodejs stack and was deployed with Netlify and Heroku.

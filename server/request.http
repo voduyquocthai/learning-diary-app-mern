@@ -1,0 +1,54 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "khue",
+    "password": "khue"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "tu",
+    "password": "tu"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NDgzMTY4NDR9.0lzSpNyIx-yTd_P_6dM6fBY24uKqsrs_JF-OrgDzgoc
+
+{
+    "title": "Learn Vuejs",
+    "description": "Vue Fundamental",
+    "url": "google.com",
+    "status": "LEARNING"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NDgzMTY4NDR9.0lzSpNyIx-yTd_P_6dM6fBY24uKqsrs_JF-OrgDzgoc
+
+###
+
+PUT http://localhost:5000/api/posts/623f51e37f12ad7002a5f10d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NDgzMTY4NDR9.0lzSpNyIx-yTd_P_6dM6fBY24uKqsrs_JF-OrgDzgoc
+
+{
+    "title": "Learn ReactJS",
+    "description": "Redux",
+    "url": "react.org",
+    "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/623f51e37f12ad7002a5f10d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NDgzMTY4NDR9.0lzSpNyIx-yTd_P_6dM6fBY24uKqsrs_JF-OrgDzgoc
