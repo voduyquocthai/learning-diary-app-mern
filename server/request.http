@@ -18,6 +18,12 @@ Content-Type: application/json
 
 ###
 
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NTA4NjgwNDF9.Y0J2_8iova7B5PEJwXHGTI1ZQksdhR1KQyO_OjmRnmo
+
+###
+
 POST http://localhost:5000/api/posts
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NDgzMTY4NDR9.0lzSpNyIx-yTd_P_6dM6fBY24uKqsrs_JF-OrgDzgoc
@@ -31,20 +37,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlY
 
 ###
 
-GET http://localhost:5000/api/posts
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NDgzMTY4NDR9.0lzSpNyIx-yTd_P_6dM6fBY24uKqsrs_JF-OrgDzgoc
-
-###
-
 PUT http://localhost:5000/api/posts/623f51e37f12ad7002a5f10d
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NDgzMTY4NDR9.0lzSpNyIx-yTd_P_6dM6fBY24uKqsrs_JF-OrgDzgoc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNlYTNhNmU1MmQzYWY0MzYwZDIyNjUiLCJpYXQiOjE2NTA0NDA1Njl9.2tWIp9Ov2IkbEaR-k9s-Zh04ZHZe20AHMupLQb3JCBo
 
 {
-    "title": "Learn ReactJS",
-    "description": "Redux",
-    "url": "react.org",
+    "title": "Learn Nodejs",
+    "description": "Nodejs",
+    "url": "nodejs.org",
     "status": "LEARNING"
 }
 
