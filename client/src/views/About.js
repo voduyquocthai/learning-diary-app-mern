@@ -8,7 +8,7 @@ const About = () => {
             <Col className="text-center">
                 <Button
                     variant="primary"
-                    href="https://github.com/ryantuannguyen"
+                    href="https://github.com/voduyquocthai"
                     size="lg"
                 >
                     Visit my github profile for more projects

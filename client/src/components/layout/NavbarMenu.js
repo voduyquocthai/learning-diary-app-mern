@@ -27,7 +27,7 @@ const NavbarMenu = () => {
                     height="32"
                     className="mr-2"
                 />
-                LearnIt
+                Learning Diary
             </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
