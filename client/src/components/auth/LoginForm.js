@@ -48,7 +48,7 @@ const LoginForm = () => {
                     <Form.Control
                         type="password"
                         placeholder="Password"
-                        name="username"
+                        name="password"
                         required
                         value={password}
                         onChange={onChangeLoginForm}
