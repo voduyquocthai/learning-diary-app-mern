@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import AlertMessage from "../layout/AlertMessage";
 
 const RegisterForm = () => {
     //Context
@@ -14,6 +15,8 @@ const RegisterForm = () => {
         password: "",
         confirmPassword: "",
     });
+
+    const [alert, setAlert] = useState(null);
 
     const { username, password, confirmPassword } = registerForm;
 
@@ -27,16 +30,16 @@ const RegisterForm = () => {
         event.preventDefault();
 
         if (password !== confirmPassword) {
-            // setAlert({ type: "danger", message: "Passwords do not match" });
-            // setTimeout(() => setAlert(null), 5000);
+            setAlert({ type: "danger", message: "Passwords do not match" });
+            setTimeout(() => setAlert(null), 5000);
             return;
         }
 
         try {
             const registerData = await registerUser(registerForm);
             if (!registerData.success) {
-                // setAlert({ type: "danger", message: registerData.message });
-                // setTimeout(() => setAlert(null), 5000);
+                setAlert({ type: "danger", message: registerData.message });
+                setTimeout(() => setAlert(null), 5000);
             }
         } catch (error) {
             console.log(error);
@@ -46,7 +49,7 @@ const RegisterForm = () => {
     return (
         <>
             <Form className="my-4" onSubmit={register}>
-                
+                <AlertMessage info={alert} />
 
                 <Form.Group>
                     <Form.Control

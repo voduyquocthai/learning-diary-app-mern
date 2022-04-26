@@ -5,6 +5,7 @@ import Auth from "./views/Auth";
 import AuthContextProvider from "./contexts/AuthContext";
 import Dashboard from "./views/Dashboard";
 import About from "./views/About";
+import ProtectedRoute from "./components/routing/ProtectedRoute";
 
 function App() {
     return (
@@ -26,12 +27,12 @@ function App() {
                             <Auth {...props} authRoute="register" />
                         )}
                     />
-                    <Route
+                    <ProtectedRoute
                         exact
                         path="/dashboard"
                         component={Dashboard}
                     />
-                    <Route exact path="/about" component={About} />
+                    <ProtectedRoute exact path="/about" component={About} />
                 </Switch>
             </Router>
         </AuthContextProvider>

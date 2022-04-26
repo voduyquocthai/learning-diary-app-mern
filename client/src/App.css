@@ -1,3 +1,7 @@
+.form-control {
+	margin-bottom: 15px;
+}
+
 .landing {
 	position: relative;
 	background: url('./assets/landing.jpg') no-repeat center center/cover;
@@ -21,10 +25,6 @@
 
 .landing-inner form {
 	width: 30%;
-}
-
-.form-control {
-	margin-bottom: 15px;
 }
 
 .landing-inner h1,
@@ -114,3 +114,4 @@ button.post-button.btn:active {
 .post-title {
 	margin-bottom: 0.5rem;
 }
+

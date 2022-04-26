@@ -19,14 +19,14 @@ const Auth = ({ authRoute }) => {
             </div>
         );
     } else if (isAuthenticated) {
-        return <Redirect to='/dashboard' />
+        return <Redirect to="/dashboard" />;
     } else {
         body = (
             <>
-                {authRoute === 'login' && <LoginForm />}
-                {authRoute === 'register' && <RegisterForm />}
+                {authRoute === "login" && <LoginForm />}
+                {authRoute === "register" && <RegisterForm />}
             </>
-        )
+        );
     }
 
     return (
@@ -39,7 +39,7 @@ const Auth = ({ authRoute }) => {
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default Auth;
